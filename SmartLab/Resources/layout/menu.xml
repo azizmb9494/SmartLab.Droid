@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/schedule"
+        android:title="Schedule" />
+    <item
+        android:id="@+id/calendar"
+        android:title="Calendar" />
+    <item
+        android:id="@+id/callout"
+        android:title="Call-Out" />
+    <item
+        android:id="@+id/filters"
+        android:title="Filters">
+        <menu>
+            <item
+                android:id="@+id/showall"
+                android:title="Show All" />
+            <item
+                android:id="@+id/bconly"
+                android:title="Biz Calc Only" />
+            <item
+                android:id="@+id/bchide"
+                android:title="Hide Biz Calc" />
+        </menu>
+    </item>
+</menu>
