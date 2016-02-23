@@ -31,7 +31,7 @@ namespace SmartLab
 				view.FindViewById<TextView> (Android.Resource.Id.Text1).SetTextColor (Color.Rgb(111, 38, 135));
 			} else {
 				view.FindViewById<TextView> (Android.Resource.Id.Text1).Text = this.Response.Requests [position].Location;
-				if (!this.Response.Requests [position].IsCalc ()) {
+				if (!this.Response.Requests [position].IsBizCalc ()) {
 					view.FindViewById<TextView> (Android.Resource.Id.Text1).SetTextColor (Color.Red);
 				} else {
 					view.FindViewById<TextView> (Android.Resource.Id.Text1).SetTextColor (Color.Rgb(111, 38, 135));

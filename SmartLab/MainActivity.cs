@@ -95,11 +95,11 @@ namespace SmartLab
 		{
 			var req = await Api.GetRequests();
 			if (this.GetBizCalcOnly ()) {
-				req.Requests = req.Requests.Where (x => x.IsCalc ()).ToList ();
+				req.Requests = req.Requests.Where (x => x.IsBizCalc ()).ToList ();
 			}
 
 			if (this.GetHideBizCalc ()) {
-				req.Requests = req.Requests.Where (x => x.IsCalc () == false).ToList ();
+				req.Requests = req.Requests.Where (x => x.IsBizCalc () == false).ToList ();
 			}
 
 			RunOnUiThread (() => {
